@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import parse from './parsers.js';
 import makeDiffTree from './makeDiff.js';
-//import format from './formatters/index.js';
 
 const getFullPath = (filepath) => path.resolve(process.cwd(), filepath).trim();
 
