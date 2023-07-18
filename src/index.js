@@ -5,7 +5,7 @@ import makeDiffTree from './makeDiff.js';
 
 const getFullPath = (filepath) => path.resolve(process.cwd(), filepath).trim();
 
-const readFile = (filepath) => fs.readFileSync(getFullPath(filepath));
+const readFile = (filepath) => fs.readFileSync(getFullPath(filepath), 'utf-8');
 
 const getDataType = (filepath) => path.extname(filepath);
 
